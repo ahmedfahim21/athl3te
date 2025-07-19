@@ -1,0 +1,258 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IAthl3teCore",
+  "sourceName": "contracts/Athl3teHub.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_activityId",
+          "type": "string"
+        }
+      ],
+      "name": "addActivity",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_goalId",
+          "type": "string"
+        }
+      ],
+      "name": "addNutritionGoal",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_goalId",
+          "type": "string"
+        }
+      ],
+      "name": "addSportGoal",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getAllUsers",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getUserDetails",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "metadata",
+              "type": "string"
+            },
+            {
+              "internalType": "string[]",
+              "name": "activityIds",
+              "type": "string[]"
+            },
+            {
+              "internalType": "string[]",
+              "name": "sportGoalIds",
+              "type": "string[]"
+            },
+            {
+              "internalType": "string[]",
+              "name": "nutritionGoalIds",
+              "type": "string[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "string",
+                  "name": "botName",
+                  "type": "string"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "messagesId",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct IAthl3teStructs.PersonalAssistant[]",
+              "name": "purchasedAssistants",
+              "type": "tuple[]"
+            },
+            {
+              "internalType": "string",
+              "name": "injuriesDescriptionId",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "nftTokenIds",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "bool",
+              "name": "isRegistered",
+              "type": "bool"
+            },
+            {
+              "internalType": "string[]",
+              "name": "joinedCommunities",
+              "type": "string[]"
+            }
+          ],
+          "internalType": "struct IAthl3teStructs.User",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_userAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getUserDetails",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "metadata",
+              "type": "string"
+            },
+            {
+              "internalType": "string[]",
+              "name": "activityIds",
+              "type": "string[]"
+            },
+            {
+              "internalType": "string[]",
+              "name": "sportGoalIds",
+              "type": "string[]"
+            },
+            {
+              "internalType": "string[]",
+              "name": "nutritionGoalIds",
+              "type": "string[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "string",
+                  "name": "botName",
+                  "type": "string"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "messagesId",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct IAthl3teStructs.PersonalAssistant[]",
+              "name": "purchasedAssistants",
+              "type": "tuple[]"
+            },
+            {
+              "internalType": "string",
+              "name": "injuriesDescriptionId",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "nftTokenIds",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "bool",
+              "name": "isRegistered",
+              "type": "bool"
+            },
+            {
+              "internalType": "string[]",
+              "name": "joinedCommunities",
+              "type": "string[]"
+            }
+          ],
+          "internalType": "struct IAthl3teStructs.User",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_user",
+          "type": "address"
+        }
+      ],
+      "name": "isUserRegistered",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_metadata",
+          "type": "string"
+        }
+      ],
+      "name": "registerUser",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_injuryId",
+          "type": "string"
+        }
+      ],
+      "name": "updateInjury",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

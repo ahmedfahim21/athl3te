@@ -7,10 +7,10 @@ async function main() {
 
     // Deploy the contract
     const contract = await ethers.getContractFactory("Athl3te");
-    const deployedContract = await contract.deploy();
+    const athl3te = await contract.deploy("Athl3te NFT", "ATH3");
 
-    await deployedContract.deployed();
-    console.log(`Contract deployed to: ${deployedContract.address}`);
+    await athl3te.deployed();
+    console.log(`Contract deployed to: ${athl3te.address}`);
 }
 
 main()

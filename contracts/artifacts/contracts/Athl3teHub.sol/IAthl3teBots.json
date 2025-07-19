@@ -1,0 +1,135 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IAthl3teBots",
+  "sourceName": "contracts/Athl3teHub.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_botName",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_unlockCostInWei",
+          "type": "uint256"
+        }
+      ],
+      "name": "addBot",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_botName",
+          "type": "string"
+        }
+      ],
+      "name": "buyBot",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getAllBotNames",
+      "outputs": [
+        {
+          "internalType": "string[]",
+          "name": "",
+          "type": "string[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_botName",
+          "type": "string"
+        }
+      ],
+      "name": "getBotDetails",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "botName",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "unlockCostInWei",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "exists",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct IAthl3teStructs.Bot",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_botName",
+          "type": "string"
+        }
+      ],
+      "name": "removeBot",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_botName",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_newCost",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateBotCost",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

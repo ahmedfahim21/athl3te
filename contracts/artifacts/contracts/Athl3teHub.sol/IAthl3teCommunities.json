@@ -1,0 +1,130 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IAthl3teCommunities",
+  "sourceName": "contracts/Athl3teHub.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_communityName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_communityImage",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_botName",
+          "type": "string"
+        }
+      ],
+      "name": "createCommunityRoom",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getAllCommunityNames",
+      "outputs": [
+        {
+          "internalType": "string[]",
+          "name": "",
+          "type": "string[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_communityName",
+          "type": "string"
+        }
+      ],
+      "name": "getCommunityMembers",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_communityName",
+          "type": "string"
+        }
+      ],
+      "name": "getCommunityRoomDetails",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "communityName",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "communityImage",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "botName",
+              "type": "string"
+            },
+            {
+              "internalType": "address",
+              "name": "createdBy",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "messagesId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address[]",
+              "name": "members",
+              "type": "address[]"
+            }
+          ],
+          "internalType": "struct IAthl3teStructs.CommunityRoom",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_communityName",
+          "type": "string"
+        }
+      ],
+      "name": "joinCommunityRoom",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

@@ -1,0 +1,47 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IAthl3teBots",
+  "sourceName": "contracts/Athl3teCommunities.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "botName",
+          "type": "string"
+        }
+      ],
+      "name": "bots",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "botName",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "unlockCostInWei",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "exists",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct IAthl3teStructs.Bot",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
